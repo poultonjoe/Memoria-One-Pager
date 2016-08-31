@@ -1,0 +1,35 @@
+@import "../vars";
+
+:root{
+    --contact-background-color:var(--venice-blue);
+
+    --contact-title-font-color:#fff;
+
+    --contact-content-font-size:1.875em;
+    --contact-content-font-color:var(--charlotte);
+}
+
+.section-contact{
+    box-sizing:border-box;
+    font-size:1rem;
+    padding:0 var(--small-spacing);
+}
+
+    .section-contact-inner{
+        max-width:750px;
+        background:var(--contact-background-color);
+        border-radius:var(--border-radius);
+        margin-left:auto;
+        margin-right:auto;
+        padding:var(--small-spacing);
+    }
+
+        .section-contact .section-title{
+            color:var(--contact-title-font-color);
+            margin:0 0 var(--small-spacing);
+        }
+
+        .section-contact .section-content a{
+            font-size:var(--contact-content-font-size);
+            color:var(--contact-content-font-color);
+        }

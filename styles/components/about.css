@@ -1,0 +1,65 @@
+@import "../vars";
+
+:root{
+    --about-background-color:var(--venice-blue);
+
+    --about-title-font-size:2.1875em;
+    --about-title-font-color:#fff;
+
+    --about-content-font-size:1.875em;
+    --about-content-font-color:var(--charlotte);
+}
+
+.section-about{
+    box-sizing:border-box;
+    font-size:1rem;
+    /*padding:var(--large-spacing) var(--small-spacing)!important;*/
+}
+
+    .section-about-inner{
+        margin:0 auto;
+        max-width:750px;
+        position:relative;
+
+        @media (min-width:768px) {
+            &:before{
+                content:'';
+                display:block;
+                width:366px;
+                height:437px;
+                position:absolute;
+                top:0;
+                right:60px;
+                background:url(/images/iPhone_Screen.png) 0 0 no-repeat;
+                background-size:100%;
+
+                @media (min-resolution:2dppx) {
+                    background:url(/images/iPhone_Screen@2x.png) 0 0 no-repeat;
+                }
+            }
+        }
+    }
+
+        .section-about-callout{
+            box-sizing:border-box;
+            background:var(--about-background-color);
+            padding:var(--small-spacing);
+            max-width:400px;
+            border-radius:var(--border-radius); 
+            margin:0 auto;
+
+            @media (min-width:768px) {
+                margin:0;
+            }
+        }
+
+        .section-about .section-title{
+            font-size:var(--about-title-font-size);
+            color:var(--about-title-font-color);
+            margin:0 0 0.5em;
+        }
+
+        .section-about .section-content{
+            font-size:var(--about-content-font-size);
+            color:var(--about-content-font-color);
+        }

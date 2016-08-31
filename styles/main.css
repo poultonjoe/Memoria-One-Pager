@@ -1,1 +1,11 @@
 @import "../node_modules/normalize.css/normalize.css";
+@import "global";
+@import "components/section";
+@import "components/header";
+@import "components/footer";
+@import "components/video";
+@import "components/about";
+@import "components/features";
+@import "components/partners";
+@import "components/team";
+@import "components/contact";

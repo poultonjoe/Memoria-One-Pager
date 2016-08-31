@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="meenu-visible">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,79 +12,87 @@
     </head>
     <body>
         <header class="site-header" role="banner">
-            <div class="site-logo">Memoria</div>
-            <nav class="site-navigation" role="navigation">
-                <ul class="site-navigation-list">
-                    <li class="site-navigation-list-item"><a class="site-navigation-link" href="#about" title="About">About</a></li>
-                    <li class="site-navigation-list-item"><a class="site-navigation-link" href="#features" title="Features">Features</a></li>
-                    <li class="site-navigation-list-item"><a class="site-navigation-link" href="#partners" title="Partners">Partners</a></li>
-                    <li class="site-navigation-list-item"><a class="site-navigation-link" href="#team" title="Team">Team</a></li>
-                    <li class="site-navigation-list-item"><a class="site-navigation-link" href="#contact" title="Contact">Contact</a></li>
-                </ul>
-                <ul class="site-navigation-social-list">
-                    <li class="site-navigation-social-list-item"><a class="site-navigation-social-link" href="#about" title="About">About</a></li>
-                    <li class="site-navigation-social-list-item"><a class="site-navigation-social-link" href="#features" title="Features">Features</a></li>
-                    <li class="site-navigation-social-list-item"><a class="site-navigation-social-link" href="#contact" title="Contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="site-header-inner clearfix">
+                <nav class="site-navigation" role="navigation" id="main-menu">
+                    <ul class="site-navigation-list">
+                        <li class="site-navigation-list-item"><a class="site-navigation-link" href="#about" title="About">About</a></li>
+                        <li class="site-navigation-list-item"><a class="site-navigation-link" href="#features" title="Features">Features</a></li>
+                        <li class="site-navigation-list-item"><a class="site-navigation-link" href="#partners" title="Partners">Partners</a></li>
+                        <li class="site-navigation-list-item"><a class="site-navigation-link" href="#team" title="Team">Team</a></li>
+                        <li class="site-navigation-list-item"><a class="site-navigation-link" href="#contact" title="Contact">Contact</a></li>
+                    </ul>
+                    <ul class="site-navigation-social-list">
+                        <li class="site-navigation-social-list-item"><a class="site-navigation-social-link site-navigation-social-link-facebook" href="#about" title="Facebook">Facebook</a></li>
+                        <li class="site-navigation-social-list-item"><a class="site-navigation-social-link site-navigation-social-link-linkedin" href="#features" title="LinkedIn">LinkedIn</a></li>
+                        <li class="site-navigation-social-list-item"><a class="site-navigation-social-link site-navigation-social-link-instagram" href="#contact" title="Instagram">Instagram</a></li>
+                    </ul>
+                </nav>
+                <div class="site-logo">Memoria</div>
+                <a href="#main-menu" class="menu-button"><span>Toggle menu</span></a>
+            </div>
         </header>
 
         <main class="site-content" role="main">
-            <section class="video-slideshow">
-                <video></video>
+            <section class="section section-video">
+                <video src="/images/video.mp4" class="video-background"></video>
                 <div class="video-slides">
                     <article class="video-slide">
-                        <h1>Rotating Title Overlay</h1>
-                        <h2>Rotating Subtitle</h2>
+                        <h1 class="video-slide-title">Rotating Title Overlay</h1>
+                        <h2 class="video-slide-subtitle">Rotating Subtitle</h2>
                     </article>
                 </div>
             </section>
 
             <section id="about" class="section section-about">
-                <h1 class="section-title">Simpler and more convenient</h1>
-                <div class="section-content">Mymi connects you to your customers and the brands they love.<br />See what we can do for you today.</div>
+                <div class="section-about-inner">
+                    <div class="section-about-callout">
+                        <h1 class="section-title">Simpler and more convenient than ever before</h1>
+                        <div class="section-content">Mymi connects you to your customers and the brands they love.<br />See what we can do for you today.</div>
+                    </div>
+                </div>
             </section>
 
             <section id="features" class="section section-features">
-                <h1 class="section-title">No matter their neighbourhood, we've got them covered</h1>
-                <div class="accordian">
-                    <article class="accordian-slide">
-                        <h1 class="accordian-title">Communities &amp; Buzz</h1>
-                        <div class="accordian-content">Lorem ipsum...</div>
-                    </article>
-                    <article class="accordian-slide">
-                        <h1 class="accordian-title">Targeted Marketing</h1>
-                        <div class="accordian-content">Lorem ipsum...</div>
-                    </article>
-                    <article class="accordian-slide">
-                        <h1 class="accordian-title">Customer Loyalty</h1>
-                        <div class="accordian-content">Lorem ipsum...</div>
-                    </article>
-                    <article class="accordian-slide">
-                        <h1 class="accordian-title">Specials &amp; Credits</h1>
-                        <div class="accordian-content">Lorem ipsum...</div>
-                    </article>
-                    <article class="accordian-slide">
-                        <h1 class="accordian-title">Feature 5</h1>
-                        <div class="accordian-content">Lorem ipsum...</div>
-                    </article>
+                <div class="section-features-inner">
+                    <h1 class="section-title">No matter their neighbourhood, we've got them covered</h1>
+                    <div class="accordian clearfix">
+                        <article class="accordian-slide open">
+                            <h1 class="accordian-title">Communities &amp; Buzz</h1>
+                            <div class="accordian-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis sapien et turpis ultricies, vel condimentum quam tincidunt. Suspendisse mattis quis nisl tincidunt hendrerit. Sed luctus justo vitae hendrerit dapibus. Curabitur mollis nisl quis mi consectetur, vitae interdum neque eleifend.</div>
+                        </article>
+                        <article class="accordian-slide">
+                            <h1 class="accordian-title">Targeted Marketing</h1>
+                            <div class="accordian-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis sapien et turpis ultricies, vel condimentum quam tincidunt. Suspendisse mattis quis nisl tincidunt hendrerit. Sed luctus justo vitae hendrerit dapibus. Curabitur mollis nisl quis mi consectetur, vitae interdum neque eleifend.</div>
+                        </article>
+                        <article class="accordian-slide">
+                            <h1 class="accordian-title">Customer Loyalty</h1>
+                            <div class="accordian-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis sapien et turpis ultricies, vel condimentum quam tincidunt. Suspendisse mattis quis nisl tincidunt hendrerit. Sed luctus justo vitae hendrerit dapibus. Curabitur mollis nisl quis mi consectetur, vitae interdum neque eleifend.</div>
+                        </article>
+                        <article class="accordian-slide">
+                            <h1 class="accordian-title">Specials &amp; Credits</h1>
+                            <div class="accordian-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis sapien et turpis ultricies, vel condimentum quam tincidunt. Suspendisse mattis quis nisl tincidunt hendrerit. Sed luctus justo vitae hendrerit dapibus. Curabitur mollis nisl quis mi consectetur, vitae interdum neque eleifend.</div>
+                        </article>
+                        <article class="accordian-slide">
+                            <h1 class="accordian-title">Feature 5</h1>
+                            <div class="accordian-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis sapien et turpis ultricies, vel condimentum quam tincidunt. Suspendisse mattis quis nisl tincidunt hendrerit. Sed luctus justo vitae hendrerit dapibus. Curabitur mollis nisl quis mi consectetur, vitae interdum neque eleifend.</div>
+                        </article>
+                    </div>
                 </div>
+            </section>
 
-                <div class="callout-list">
-                    <article class="callout-item callout-item-right">
-                        <img class="callout-image">
+            <section id="callouts" class="section section-callouts">
+                <div class="section-callouts-inner">
+                    <article class="callout-item callout-item-right callout-item-dashboard clearfix">
                         <h1 class="callout-title">Dashboard</h1>
-                        <div class="callout-content">Lorem ipsum...</div>
+                        <div class="callout-content">Vestibulum felis ligula, gravida eget nisi at, luctus dapibus mi. Vivamus vitae laoreet eros.</div>
                     </article>
-                    <article class="callout-item callout-item-left">
-                        <img class="callout-image">
+                    <article class="callout-item callout-item-left callout-item-campaigns clearfix">
                         <h1 class="callout-title">Campaigns</h1>
-                        <div class="callout-content">Lorem ipsum...</div>
+                        <div class="callout-content">Vestibulum felis ligula, gravida eget nisi at, luctus dapibus mi.</div>
                     </article>
-                    <article class="callout-item callout-item-right">
-                        <img class="callout-image">
+                    <article class="callout-item callout-item-right callout-item-geo clearfix">
                         <h1 class="callout-title">Geolocation Technology</h1>
-                        <div class="callout-content">Lorem ipsum...</div>
+                        <div class="callout-content">Vestibulum felis ligula, gravida eget nisi at, luctus dapibus mi. Vivamus vitae laoreet eros.</div>
                     </article>
                 </div>
             </section>
@@ -92,10 +100,10 @@
             <section id="partners" class="section section-partners">
                 <h1 class="section-title">Partners already on board</h1>
                 <ul class="partners-list">
-                    <li class="partners-list-item">Molly Malone's</li>
-                    <li class="partners-list-item">The Exchange</li>
-                    <li class="partners-list-item">BQ Bar</li>
-                    <li class="partners-list-item">Bullandbear</li>
+                    <li class="partners-list-item partners-list-item-mollys">Molly Malone's</li>
+                    <li class="partners-list-item partners-list-item-exchange">The Exchange</li>
+                    <li class="partners-list-item partners-list-item-bq">BQ Bar</li>
+                    <li class="partners-list-item partners-list-item-bullandbear">Bullandbear</li>
                 </ul>
             </section>
 
@@ -116,28 +124,31 @@
             </section>
 
             <section id="contact" class="section section-contact">
-                <h1 class="section-title">Jump in</h1>
-                <div class="section-content">
-                    <a href="mailto:hello@memorianow.com" title="Email us">hello@memorianow.com</a>
+                <div class="section-contact-inner">
+                    <h1 class="section-title">Jump in</h1>
+                    <div class="section-content">
+                        <a href="mailto:hello@memorianow.com" title="Email us">hello@memorianow.com</a>
+                    </div>
+                </div>
+                <div class="app-downloads">
+                    <AppStore />
+                    <PlayStore />
                 </div>
             </section>
-
-            <div class="app-downloads">
-                <AppStore />
-                <PlayStore />
-            </div>
         </main>
 
         <footer class="site-footer" role="contentinfo">
-            <div class="site-copyright">&copy; 2016 Memoria</div>
-            <div class="site-credit">Designed by <a href="http://collectivetype.co" title="Collective Type Co.">Collective Type Co.</a></div>
-
-            <ul class="site-footer-navigation-items">
-                <li class="site-footer-navigation-item"><a class="site-footer-navigation-link" href="/" title="Facebook">Facebook</a></li>
-                <li class="site-footer-navigation-item"><a class="site-footer-navigation-link" href="/" title="LinkedIn">LinkedIn</a></li>
-                <li class="site-footer-navigation-item"><a class="site-footer-navigation-link" href="/" title="Instagram">Instagram</a></li>
-                <li class="site-footer-navigation-item"><a class="site-footer-navigation-link" href="mailto:hello@memorianow.com" title="hello@memorianow.com">hello@memorianow.com</a></li>
-            </ul>
+            <div class="site-footer-inner clearfix">                
+                <ul class="site-footer-navigation-items clearfix">
+                    <li class="site-footer-navigation-item"><a class="site-footer-navigation-link" href="/" title="Facebook">Facebook</a></li>
+                    <li class="site-footer-navigation-item"><a class="site-footer-navigation-link" href="/" title="LinkedIn">LinkedIn</a></li>
+                    <li class="site-footer-navigation-item"><a class="site-footer-navigation-link" href="/" title="Instagram">Instagram</a></li>
+                    <li class="site-footer-navigation-item"><a class="site-footer-navigation-link" href="mailto:hello@memorianow.com" title="hello@memorianow.com">hello@memorianow.com</a></li>
+                </ul>
+                
+                <div class="site-copyright">&copy; 2016 Memoria</div>
+                <div class="site-credit">Designed by <a href="http://collectivetype.co" title="Collective Type Co.">Collective Type Co.</a></div>
+            </div>
         </footer>
 
         <script src="dist/bundle.js"></script>

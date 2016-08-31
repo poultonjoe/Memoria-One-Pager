@@ -49,11 +49,50 @@
 
 /***/ },
 /* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _accordian = __webpack_require__(2);
+
+	__webpack_require__(3);
+
+	function bindHandlers() {
+	    document.addEventListener('click', function (e) {
+	        (0, _accordian.accordian)(e);
+	    }, false);
+	}
+
+	bindHandlers();
+
+/***/ },
+/* 2 */
 /***/ function(module, exports) {
 
-	import '../styles/main.css';
+	'use strict';
 
-	console.log('hello, world');
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.accordian = accordian;
+	function accordian(e) {
+	    if (e.target.parentNode.classList.contains('accordian-slide') && !e.target.parentNode.classList.contains('open')) {
+	        var slides = document.querySelectorAll('.accordian-slide');
+	        Array.from(slides).forEach(function (slide) {
+	            console.log(slide);
+	            slide.classList.remove('open');
+	        });
+	        setTimeout(function () {
+	            return e.target.parentNode.classList.add('open');
+	        });
+	    }
+	}
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);

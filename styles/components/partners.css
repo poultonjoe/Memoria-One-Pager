@@ -1,0 +1,34 @@
+@import "../vars";
+
+:root{}
+
+.section-partners{
+    max-width:850px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+    .section-partners .section-title{
+        text-align:center;
+    }
+
+    .partners-list{
+        margin:0 auto;
+        padding:0;
+        list-style:none;
+    }
+
+        .partners-list-item{
+            display:inline-block;
+            text-indent:-999em;
+            overflow:hidden;
+            background-repeat:no-repeat;
+            background-position:0 0;
+
+            /*&.partners-list-item-mollys{
+                background-size:;
+                background-image:url(/images/);
+
+            }*/
+        }

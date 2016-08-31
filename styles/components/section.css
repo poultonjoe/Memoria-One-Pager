@@ -1,0 +1,19 @@
+@import "../vars";
+
+:root{
+    --section-title-font-size:3.4375em;
+    --section-title-font-color:var(--body-font-color);
+}
+
+.section{
+    box-sizing:border-box;
+    font-size:1rem;
+    margin:0 0 var(--large-spacing);
+    padding:var(--large-spacing) var(--small-spacing)!important;
+}
+
+    .section-title{
+        font-size:var(--section-title-font-size);
+        color:var(--section-title-font-color);
+        margin:0 0 var(--large-spacing);
+    }

@@ -1,3 +1,11 @@
+import {accordian} from './accordian';
+
 import '../styles/main.css';
 
-console.log('hello, world');
+function bindHandlers() {
+    document.addEventListener('click', e => {
+        accordian(e);
+    }, false);
+}
+
+bindHandlers();
