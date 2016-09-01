@@ -62,4 +62,12 @@
         .section-about .section-content{
             font-size:var(--about-content-font-size);
             color:var(--about-content-font-color);
+
+            p:last-child{
+                margin:0;
+            }
+
+            a{
+                color:#fff;
+            }
         }

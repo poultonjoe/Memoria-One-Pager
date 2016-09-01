@@ -21,14 +21,54 @@
 
         .partners-list-item{
             display:inline-block;
-            text-indent:-999em;
-            overflow:hidden;
-            background-repeat:no-repeat;
-            background-position:0 0;
+            text-align:center;
+            margin-bottom:var(--small-spacing);
+            width:100%;
 
-            /*&.partners-list-item-mollys{
-                background-size:;
-                background-image:url(/images/);
+            @media screen and (min-width:480px) {
+                display:inline-block;
+                vertical-align:middle;
+                width:49%;
+            }
 
-            }*/
+            @media screen and (min-width:768px) {
+                width:24%;
+                margin:0;
+            }
         }
+
+            .partners-link{
+                display:inline-block;
+                text-indent:-999em;
+                overflow:hidden;
+                background-repeat:no-repeat;
+                background-position:0 0;
+
+                &.partners-link-mollys{
+                    background-size:100%;
+                    background-image:url(/images/mollymalones.png);
+                    height:88px;
+                    width:88px;
+                }
+
+                &.partners-link-exchange{
+                    background-size:100%;
+                    background-image:url(/images/exchange.jpg);
+                    height:40px;
+                    width:200px;
+                }
+
+                &.partners-link-bq{
+                    background-size:100%;
+                    background-image:url(/images/bqbar.png);
+                    height:83px;
+                    width:83px;
+                }
+
+                &.partners-link-bullandbear{
+                    background-size:100%;
+                    background-image:url(/images/bullandbear.png);
+                    height:44px;
+                    width:146px;
+                }
+            }

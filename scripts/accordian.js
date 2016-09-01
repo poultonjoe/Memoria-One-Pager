@@ -1,10 +1,15 @@
 export function accordian(e) {
-    if (e.target.parentNode.classList.contains('accordian-slide') && !e.target.parentNode.classList.contains('open')) {
+    let target = e.target;
+
+    if (target.classList.contains('accordian-slide')) {
+        target = target.childNodes[0];
+    }
+
+    if (target.parentNode.classList.contains('accordian-slide') && !target.parentNode.classList.contains('open')) {
         const slides = document.querySelectorAll('.accordian-slide');
         Array.from(slides).forEach(slide => {
-            console.log(slide);
             slide.classList.remove('open')
         });
-        setTimeout(() => e.target.parentNode.classList.add('open'));
+        setTimeout(() => target.parentNode.classList.add('open'));
     }
 }

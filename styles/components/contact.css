@@ -12,7 +12,8 @@
 .section-contact{
     box-sizing:border-box;
     font-size:1rem;
-    padding:0 var(--small-spacing);
+    padding:0 var(--small-spacing) var(--small-spacing)!important;
+    margin-bottom:0;
 }
 
     .section-contact-inner{
@@ -33,3 +34,31 @@
             font-size:var(--contact-content-font-size);
             color:var(--contact-content-font-color);
         }
+
+        .app-downloads{
+            margin:var(--small-spacing) auto 0;
+            text-align:center;
+        }
+
+            .app-download-link{
+                margin:0 20px;
+                display:inline-block;
+                height:50px;
+                text-indent:-999em;
+                overflow:hidden;
+                background-repeat:no-repeat;
+                background-position:0 0;
+
+                &.app-download-link-itunes{
+                    width:169px;
+                    background-size:169px 50px;
+                    background-image:url(/images/applestore.svg);
+                }
+
+                &.app-download-link-play{
+                    width:190px;
+                    background-size:194px 77px;
+                    background-position:-2px -13px;
+                    background-image:url(/images/googleplay.png);
+                }
+            }
