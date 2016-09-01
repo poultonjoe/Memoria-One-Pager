@@ -38,6 +38,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "lodash.debounce": "^4.0.8",
     "normalize.css": "^4.2.0"
   }
 }

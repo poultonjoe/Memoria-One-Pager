@@ -17,6 +17,7 @@
         padding-top:100px;
         width:100%;
         max-width:420px;
+        height:400px;
         margin:0 auto;
         text-align:center;
         position:relative;
@@ -38,6 +39,7 @@
             background-repeat:no-repeat;
             background-position:0 0;
             background-size:30px 30px;
+            z-index:10;
 
             &.carousel-navigation-previous{
                 left:0;
@@ -55,10 +57,16 @@
         }
 
         .carousel-slide{
-            display:none;
+            position:absolute;
+            top:100px;
+            left:50%;
+            transform:translateX(-50%);
+            width:100%;
+            opacity:0;
+            z-index:1;
 
             &.active{
-                display:block;
+                opacity:1;
             }
         }
 
@@ -73,7 +81,7 @@
 
                 &.carousel-image-wrap-previous{
                     position:absolute;
-                    top:100px;
+                    top:0;
                     left:-175px;
                     display:none;
 
@@ -84,7 +92,7 @@
 
                 &.carousel-image-wrap-next{
                     position:absolute;
-                    top:100px;
+                    top:0;
                     right:-175px;
                     display:none;
 
