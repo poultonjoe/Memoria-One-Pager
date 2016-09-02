@@ -19,7 +19,7 @@
         max-width:850px;
         width:100%;
         margin:0 auto;
-        font-size:1.1875rem;
+        font-size:1rem;
         text-align:center;
 
         @media screen and (min-width:768px) {
@@ -70,5 +70,5 @@
         .site-credit{
             clear:both;
             color:var(--dim-gray);
-            font-size:0.75rem;
+            font-size:0.55rem;
         }
