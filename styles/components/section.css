@@ -1,7 +1,7 @@
 @import "../vars";
 
 :root{
-    --section-title-font-size:3.4375em;
+    --section-title-font-size:3em;
     --section-title-font-color:var(--body-font-color);
 }
 

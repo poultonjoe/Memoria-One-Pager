@@ -29,7 +29,7 @@
                 height:437px;
                 position:absolute;
                 top:0;
-                right:60px;
+                right:0;
                 background:url(/images/iPhone_Screen.png) 0 0 no-repeat;
                 background-size:100%;
 
@@ -44,12 +44,12 @@
             box-sizing:border-box;
             background:var(--about-background-color);
             padding:var(--small-spacing);
-            max-width:400px;
+            max-width:380px;
             border-radius:var(--border-radius); 
             margin:0 auto;
 
             @media (min-width:768px) {
-                margin:0;
+                margin:0 0 0 5%;
             }
         }
 
