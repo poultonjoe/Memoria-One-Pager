@@ -63,6 +63,7 @@
             transform:translateX(-50%);
             width:100%;
             opacity:0;
+            transition:opacity 1s;
             z-index:1;
 
             &.active{
@@ -72,7 +73,6 @@
 
             .carousel-image-wrap{
                 display:inline-block;
-                background:red; /*remove when we have sources*/
                 height:137px;
                 width:137px;
                 border-radius:50%;
@@ -82,7 +82,7 @@
                 &.carousel-image-wrap-previous{
                     position:absolute;
                     top:0;
-                    left:-175px;
+                    left:-235px;
                     display:none;
 
                     @media (min-width:800px) {
@@ -93,7 +93,7 @@
                 &.carousel-image-wrap-next{
                     position:absolute;
                     top:0;
-                    right:-175px;
+                    right:-235px;
                     display:none;
 
                     @media (min-width:800px) {
