@@ -27,7 +27,7 @@
 
         .section-contact .section-title{
             color:var(--contact-title-font-color);
-            margin:0 0 var(--small-spacing);
+            margin:0;
         }
 
         .section-contact .section-content a{
